@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+ 
+#logo-nav-div{
+    width: 100%;
+    min-height: 110px;
+    background-color: rgb(0,38,74);
+}
+ 
+#logo-div{
+    width: 50%;
+    float: left;
+    padding-left: 2%;
+}
+ 
+#nav-div{
+    width: 50%;
+    float: right;
+    line-height: 100px;
+    font-family: Aboreto;
+    font-size: 16px;
+}
+ 
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+ 
+#main-div{
+    width: 100%;
+    min-height: 100px;
+}
+ 
+#sidebar-div{
+    width:20%;
+    min-height:400px;
+    background-color: rgb(255,220,220);
+    float:left;
+    text-align:center;
+    line-height:100px;
+    font-family: Aboreto;
+    font-size: 16px;
+}
+ 
+#bodyarea-div{
+    width:80%;
+    min-height:400px;
+    background-color:blanchedalmond;
+    float:right;
+    text-align:center;
+    line-height: 25px;
+}
+ 
+form {
+    max-width: 500px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 60px 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px auto; /* Center horizontally with auto left and right margins */
+    margin-left: 375px; /* Adjust right margin to move form slightly to the right */
+    justify-content: center;
+}
+
+
+
+form h2 {
+    color: var(--text-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.checkboxGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkboxGroup input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    position: relative;
+    left: -20px;
+    color: var(--accent-color);
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="email"] {
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    color: var(--text-color);
+    font-size: 1em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.inputBox label span {
+    display: inline-block;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+
+.inputBox input[type="text"]:focus ~ label span,
+.inputBox input[type="text"]:valid ~ label span,
+.inputBox input[type="email"]:focus ~ label span,
+.inputBox input[type="email"]:valid ~ label span {
+    color: var(--primary-color);
+    letter-spacing: 0.15em;
+    transform: translateY(-25px);
+}
+
+.inputBox input[type="text"]:focus,
+.inputBox input[type="text"]:valid,
+.inputBox input[type="email"]:focus,
+.inputBox input[type="email"]:valid {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.inputBox input[type="submit"] {
+    background: var(--primary-color);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color: var(--accent-color);
+    font-size: 1.15em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#footer-div{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(0,38,74);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-family: Comfortaa;
+    font-size: 18px;
+}
