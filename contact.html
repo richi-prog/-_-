@@ -1,183 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Koricosmos - Contact Us</title>
-        <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koricosmos - Contact Us</title>
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <style>
-*{
-    box-sizing: border-box;
-}
- 
-#logo-nav-div{
-    width: 100%;
-    min-height: 110px;
-    background-color: rgb(0,38,74);
-}
- 
-#logo-div{
-    width: 50%;
-    float: left;
-    padding-left: 2%;
-}
- 
-#nav-div{
-    width: 50%;
-    float: right;
-    line-height: 100px;
-    font-family: Aboreto;
-    font-size: 16px;
-}
- 
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
- 
-#main-div{
-    width: 100%;
-    min-height: 100px;
-}
- 
-#sidebar-div{
-    width:15%;
-    min-height:540px;
-    background-color: rgb(255,220,220);
-    float:left;
-    text-align:center;
-    line-height:124px;
-    font-family: Aboreto;
-    font-size: 14px;
-}
- 
-#bodyarea-div{
-    width: 85%;
-    float: right;
-    display: flex;
-    flex-wrap: wrap;
-    background-color:blanchedalmond;
-    align-content: stretch;
-    font-family: Comfortaa;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-.img1-div{
-    position: relative;
-    top:0px;
-    left:90px;
-}
+        body {
+            font-family: Comfortaa, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
 
-.img2-div{
-    position: relative;
-    top:0px;
-    left:200px;
-}
+        #logo-nav-div {
+            width: 100%;
+            min-height: 110px;
+            background-color: rgb(0, 38, 74);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2%;
+        }
 
-.img3-div{
-    position: relative;
-    top:15px;
-    left:90px;
-}
+        #logo-div img {
+            width: 105px;
+            height: 105px;
+        }
 
-.img4-div{
-    position: relative;
-    top:15px;
-    left:200px;
-}
+        #nav-div {
+            display: flex;
+            align-items: center;
+            font-family: Aboreto, serif;
+            font-size: 16px;
+        }
 
-.img5-div{
-    position: relative;
-    top:15px;
-    left:203px;
-}
+        #nav-div a {
+            color: aliceblue;
+            text-decoration: none;
+            margin: 0 15px;
+        }
 
-.box-div{
-    width: 60%;
-    min-height: 300px;
-}
+        #nav-div a:hover {
+            text-decoration: underline;
+        }
 
-#footer-div{
-    width: 100%;
-    background-color: rgb(0,38,74);
-    color: white;
-    text-align: center;
-    padding: 30px;
-    display: flex;
-    line-height: 30px;
-    font-family: Comfortaa;
-    font-size: 18px;
-}
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
 
-.footer-img{
-    flex: 1;
-    text-align: center;
-}
+        #main-div {
+            display: flex;
+        }
+
+        #sidebar-div {
+            width: 15%;
+            background-color: rgb(255, 220, 220);
+            padding: 20px;
+            border-right: 2px solid rgb(0, 38, 74);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 170vh;
+        }
+
+        #sidebar-div a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 15px 0;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sidebar-div a:hover {
+            background-color: rgb(0, 38, 74);
+            color: white;
+        }
+
+        #bodyarea-div {
+            width: 85%;
+            background: url('stardust.png') repeat, rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            font-family: Comfortaa, sans-serif;
+        }
+
+        #contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        #contact-content h1 {
+            font-family: Aboreto, serif;
+            font-size: 36px;
+            color: rgb(0, 38, 74);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #contact-content p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #contact-content .contact-item {
+            background: url('https://www.transparenttextures.com/patterns/.png') repeat, rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #footer-div {
+            width: 100%;
+            background-color: rgb(0, 38, 74);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Comfortaa, sans-serif;
+            font-size: 18px;
+        }
+
+        .footer-img img {
+            width: 110px;
+            height: 110px;
+        }
+
+        .footer-img p {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            #logo-nav-div {
+                flex-direction: column;
+                padding: 10px 2%;
+            }
+
+            #nav-div {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+
+            #nav-div a {
+                margin: 10px 0;
+            }
+
+            .hamburger {
+                display: block;
+                cursor: pointer;
+                margin-left: auto;
+            }
+
+            .hamburger div {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                margin: 5px 0;
+            }
+
+            #sidebar-div {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                border-right: none;
+                border-bottom: 2px solid rgb(0, 38, 74); 
+            }
+
+            #main-div {
+                flex-direction: column;
+            }
+
+            #bodyarea-div {
+                width: 100%;
+                padding: 20px;
+            }
+
+            #about-content h1 {
+                font-size: 28px;
+            }
+
+            #about-content p {
+                font-size: 16px;
+            }
+
+            #about-content img {
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
+</head>
 <body>
     <div id="wrapper-div">
         <div id="logo-nav-div">
             <div id="logo-div">
-                <img width="105" height="105" src="koricosmos.png">
+                <img src="koricosmos.png" alt="Koricosmos Logo">
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
             <div id="nav-div">
-                <a style="color:aliceblue; text-decoration:none" href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Home</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="about.html">&nbsp;&nbsp;&nbsp;About Us</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="#">&nbsp;&nbsp;&nbsp;New Releases</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="#">&nbsp;&nbsp;&nbsp;Shop Now</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="help.html">&nbsp;&nbsp;&nbsp;Help</b></a>
+                <a href="index.html"><b>Home</b></a>
+                <a href="about.html"><b>About Us</b></a>
+                <a href="new.html">New Releases</a>
+                <a href="shop.html">Shop Now</a>
+                <a href="help.html"><b>Help</b></a>
             </div>
         </div>  
-    <div id="main-div">
-        <div id="sidebar-div">
-            <a style="color: black; text-decoration:none" href="index.html"><b>Home</a><br>
-            <a style="color: black; text-decoration:none" href="#">Create A Custom Cosmo</a><br>
-            <a style="color: black; text-decoration:none" href="contact.html">Contact Us</b></a><br>
+        <div id="main-div">
+            <div id="sidebar-div">
+                <a href="index.html"><b>Home</b></a>
+                <a href="cosmo.html">Create A Custom Cosmo</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div id="bodyarea-div">
+                <div id="contact-content">
+                    <h1>Contact Us</h1>
+                    <div class="contact-item">
+                        <h2>Customer Service Hours:</h2>
+                        <p>Monday - Friday: 9:00 AM to 6:00 PM (EST)</p>
+                    </div>
+                    <div class="contact-item">
+                        <h2>Email:</h2>
+                        <p>kori_cosmos@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h2>Phone:</h2>
+                        <p>1-800-123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h2>Address:</h2>
+                        <p>
+                            789 Cosmo Drive,<br>
+                            Manila, Philippines, 1000
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <h2>Social Media:</h2>
+                        <p>
+                            Connect with us on <a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Tiktok</a>, or visit our <a href="#">website</a> for the latest updates, promotions, and to see our stunning jewelry collections in action.
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <h2>Visit Us:</h2>
+                        <p>
+                            While we primarily operate online, we occasionally participate in local jewelry shows and exhibitions. Follow our social media channels for announcements on upcoming events where you can see our jewelry up close and meet our team.
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <h2>Our Commitment:</h2>
+                        <p>
+                            Our customer service team is dedicated to providing you with exceptional service and expertise. We look forward to assisting you with all your jewelry needs!
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="bodyarea-div">
-        </div>
-        <div id="bodyarea-div">
-            <p>
-                Contact Us<br>
-                Thank you for visiting our jewelry website! Whether you have a question about a specific product, need assistance with an order, or simply want to learn more about our collections, we're here to help. Please feel free to reach out to us using the following contact information:<br><br>
-
-                Customer Service Hours:<br>
-                Monday - Friday: 9:00 AM to 6:00 PM (EST)<br><br>
-
-                Email: <br>
-                kori_cosmos@gmail.com<br><br>
-
-                Phone: <br>
-                1-800-123-4567<br><br>
-
-                Address: <br>
-                789 Cosmo Drive, <br>
-                Manila, Philippines, 1000<br><br>
-
-                Social Media:<br>
-                Connect with us on Facebook, Instagram, Tiktok, or on our website for the latest updates, promotions, and to see our stunning jewelry collections in action.<br><br>
-
-                Visit Us:<br>
-                While we primarily operate online, we occasionally participate in local jewelry shows and exhibitions. Follow our social media channels for announcements on upcoming events where you can see our jewelry up close and meet our team.<br><br>
-
-                Our customer service team is dedicated to providing you with exceptional service and expertise. We look forward to assisting you with all your jewelry needs!<br>
-            </p>
-        </div>
-        </div>
+        <div id="footer-div">
+            <div class="footer-img">
+                <img src="koricosmos.png" alt="Koricosmos Logo">
+                <p>Richielle Ann A. Gutierrez - richi.elleanng@gmail.com</p>
+            </div>
         </div>
     </div>
-    
-    <div id="footer-div">
-        <div class= "footer-img">
-            <img width="110" height="110" src="koricosmos.png">
-            <div class="footer-img">  
-            <p>Richielle Ann A. Gutierrez - richi.elleanng@gmail.com</p>
-        </div>
-        </div>
-            
-    </div>
-</div>
+    <script>
+        function toggleNav() {
+            var navDiv = document.getElementById("nav-div");
+            if (navDiv.style.display === "flex") {
+                navDiv.style.display = "none";
+            } else {
+                navDiv.style.display = "flex";
+            }
+        }
+    </script>
 </body>
 </html>
