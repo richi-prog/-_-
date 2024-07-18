@@ -1,176 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Koricosmos - Help</title>
-        <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koricosmos - Help</title>
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <style>
-*{
-    box-sizing: border-box;
-}
- 
-#logo-nav-div{
-    width: 100%;
-    min-height: 110px;
-    background-color: rgb(0,38,74);
-}
- 
-#logo-div{
-    width: 50%;
-    float: left;
-    padding-left: 2%;
-}
- 
-#nav-div{
-    width: 50%;
-    float: right;
-    line-height: 100px;
-    font-family: Aboreto;
-    font-size: 16px;
-}
- 
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
- 
-#main-div{
-    width: 100%;
-    min-height: 100px;
-}
- 
-#sidebar-div{
-    width:15%;
-    min-height: 610px;
-    background-color: rgb(255,220,220);
-    float:left;
-    text-align:center;
-    line-height:124px;
-    font-family: Aboreto;
-    font-size: 14px;
-}
- 
-#bodyarea-div{
-    width: 85%;
-    float: right;
-    display: flex;
-    flex-wrap: wrap;
-    background-color:blanchedalmond;
-    align-content: stretch;
-    font-family: Comfortaa;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-.img1-div{
-    position: relative;
-    top:0px;
-    left:90px;
-}
+        body {
+            font-family: Comfortaa, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
 
-.img2-div{
-    position: relative;
-    top:0px;
-    left:200px;
-}
+        #logo-nav-div {
+            width: 100%;
+            min-height: 110px;
+            background-color: rgb(0, 38, 74);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2%;
+        }
 
-.img3-div{
-    position: relative;
-    top:15px;
-    left:90px;
-}
+        #logo-div img {
+            width: 105px;
+            height: 105px;
+        }
 
-.img4-div{
-    position: relative;
-    top:15px;
-    left:200px;
-}
+        #nav-div {
+            display: flex;
+            align-items: center;
+            font-family: Aboreto, serif;
+            font-size: 16px;
+        }
 
-.img5-div{
-    position: relative;
-    top:15px;
-    left:203px;
-}
+        #nav-div a {
+            color: aliceblue;
+            text-decoration: none;
+            margin: 0 15px;
+        }
 
-.box-div{
-    width: 60%;
-    min-height: 300px;
-}
+        #nav-div a:hover {
+            text-decoration: underline;
+        }
 
-#footer-div{
-    width: 100%;
-    background-color: rgb(0,38,74);
-    color: white;
-    text-align: center;
-    padding: 30px;
-    display: flex;
-    line-height: 30px;
-    font-family: Comfortaa;
-    font-size: 18px;
-}
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
 
-.footer-img{
-    flex: 1;
-    text-align: center;
-}
+        #main-div {
+            display: flex;
+        }
+
+        #sidebar-div {
+            width: 15%;
+            background-color: rgb(255, 220, 220);
+            padding: 20px;
+            border-right: 2px solid rgb(0, 38, 74);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 220vh;
+        }
+
+        #sidebar-div a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 15px 0;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sidebar-div a:hover {
+            background-color: rgb(0, 38, 74);
+            color: white;
+        }
+
+        #bodyarea-div {
+            width: 85%;
+            background: url('stardust.png') repeat, rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            font-family: Comfortaa, sans-serif;
+        }
+
+        #faq-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        #faq-content h1 {
+            font-family: Aboreto, serif;
+            font-size: 36px;
+            color: rgb(0, 38, 74);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #faq-content h2 {
+            font-size: 24px;
+            color: rgb(0, 38, 74);
+            margin-bottom: 10px;
+        }
+
+        #faq-content p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #faq-content .faq-item {
+            background: url('https://www.transparenttextures.com/patterns/constellation.png') repeat, rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #footer-div {
+            width: 100%;
+            background-color: rgb(0, 38, 74);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Comfortaa, sans-serif;
+            font-size: 18px;
+        }
+
+        .footer-img img {
+            width: 110px;
+            height: 110px;
+        }
+
+        .footer-img p {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            #logo-nav-div {
+                flex-direction: column;
+                padding: 10px 2%;
+            }
+
+            #nav-div {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+
+            #nav-div a {
+                margin: 10px 0;
+            }
+
+            .hamburger {
+                display: block;
+                cursor: pointer;
+                margin-left: auto;
+            }
+
+            .hamburger div {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                margin: 5px 0;
+            }
+
+            #sidebar-div {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                border-right: none;
+                border-bottom: 2px solid rgb(0, 38, 74); 
+            }
+
+            #main-div {
+                flex-direction: column;
+            }
+
+            #bodyarea-div {
+                width: 100%;
+                padding: 20px;
+            }
+
+            #about-content h1 {
+                font-size: 28px;
+            }
+
+            #about-content p {
+                font-size: 16px;
+            }
+
+            #about-content img {
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
+</head>
 <body>
     <div id="wrapper-div">
         <div id="logo-nav-div">
             <div id="logo-div">
-                <img width="105" height="105" src="koricosmos.png">
+                <img src="koricosmos.png" alt="Koricosmos Logo">
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
             <div id="nav-div">
-                <a style="color:aliceblue; text-decoration:none" href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Home</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="about.html">&nbsp;&nbsp;&nbsp;About Us</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="#">&nbsp;&nbsp;&nbsp;New Releases</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="#">&nbsp;&nbsp;&nbsp;Shop Now</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="help.html">&nbsp;&nbsp;&nbsp;Help</b></a>
+                <a href="index.html"><b>Home</b></a>
+                <a href="about.html"><b>About Us</b></a>
+                <a href="new.html">New Releases</a>
+                <a href="shop.html">Shop Now</a>
+                <a href="help.html"><b>Help</b></a>
             </div>
         </div>  
-    <div id="main-div">
-        <div id="sidebar-div">
-            <a style="color: black; text-decoration:none" href="index.html"><b>Home</a><br>
-            <a style="color: black; text-decoration:none" href="#">Create A Custom Cosmo</a><br>
-            <a style="color: black; text-decoration:none" href="contact.html">Contact Us</b></a><br>
+        <div id="main-div">
+            <div id="sidebar-div">
+                <a href="index.html"><b>Home</b></a>
+                <a href="cosmo.html">Create A Custom Cosmo</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div id="bodyarea-div">
+                <div id="faq-content">
+                    <h1>Frequently Asked Questions (FAQs)</h1>
+                    <div class="faq-item">
+                        <h2>What makes your jewelry unique?</h2>
+                        <p>
+                            Our jewelry is crafted with a blend of traditional craftsmanship and contemporary design. Each piece is meticulously created using high-quality materials such as sterling silver, gold, and genuine gemstones, ensuring both elegance and durability. Our designs are also inspired by diverse cultures and artistic movements, resulting in pieces that are not only beautiful but also culturally rich and meaningful.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h2>Do you offer custom jewelry design services?</h2>
+                        <p>
+                            Yes, we specialize in custom jewelry design to cater to your unique preferences and occasions. Whether you're looking to create a personalized engagement ring, a bespoke necklace, or a one-of-a-kind bracelet, our team of skilled artisans and designers will work closely with you to bring your vision to life. From selecting the perfect gemstones to refining the design details, we ensure that every piece reflects your individual style and story.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h2>What materials are used in your jewelry?</h2>
+                        <p>
+                            We use only the finest materials sourced from trusted suppliers worldwide. Our collection features sterling silver, 14k and 18k gold, platinum, and ethically sourced gemstones including diamonds, sapphires, emeralds, and more. Each material is selected for its quality, beauty, and ethical considerations, ensuring that our jewelry not only shines brightly but also aligns with our commitment to sustainability and responsible sourcing practices.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h2>How can I care for my jewelry?</h2>
+                        <p>
+                            Proper care ensures that your jewelry remains beautiful and retains its luster over time. We recommend cleaning your pieces regularly using a mild soap and water solution and a soft brush. Avoid exposing your jewelry to harsh chemicals, extreme temperatures, and abrasive surfaces. When not wearing your jewelry, store it in a soft pouch or a jewelry box to prevent scratches and damage. Following these simple care tips will help preserve the beauty and longevity of your cherished pieces.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h2>What is your return and exchange policy?</h2>
+                        <p>
+                            We want you to be completely satisfied with your purchase. If for any reason you are not happy with your jewelry, you may return it within 30 days for a full refund or exchange, provided that the item is in its original condition and accompanied by proof of purchase. Custom-made and engraved items may be subject to specific return conditions, which our customer service team will be happy to assist you with. Our goal is to ensure that you have a positive experience with our jewelry, from purchase to wear and beyond.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="bodyarea-div">
+        <div id="footer-div">
+            <div class="footer-img">
+                <img src="koricosmos.png" alt="Koricosmos Logo">
+                <p>Richielle Ann A. Gutierrez - richi.elleanng@gmail.com</p>
+            </div>
         </div>
-        <div id="bodyarea-div">
-            <p>
-                Frequently Asked Questions (FAQs) about Koricosmos<br><br>
-
-                What makes your jewelry unique?<br>
-                Our jewelry is crafted with a blend of traditional craftsmanship and contemporary design. Each piece is meticulously created using high-quality materials such as sterling silver, gold, and genuine gemstones, ensuring both elegance and durability. Our designs are also inspired by diverse cultures and artistic movements, resulting in pieces that are not only beautiful but also culturally rich and meaningful.<br><br>
-                
-                Do you offer custom jewelry design services?<br>
-                Yes, we specialize in custom jewelry design to cater to your unique preferences and occasions. Whether you're looking to create a personalized engagement ring, a bespoke necklace, or a one-of-a-kind bracelet, our team of skilled artisans and designers will work closely with you to bring your vision to life. From selecting the perfect gemstones to refining the design details, we ensure that every piece reflects your individual style and story.<br><br>
-                
-                What materials are used in your jewelry?<br>
-                We use only the finest materials sourced from trusted suppliers worldwide. Our collection features sterling silver, 14k and 18k gold, platinum, and ethically sourced gemstones including diamonds, sapphires, emeralds, and more. Each material is selected for its quality, beauty, and ethical considerations, ensuring that our jewelry not only shines brightly but also aligns with our commitment to sustainability and responsible sourcing practices.<br><br>
-                
-                How can I care for my jewelry?<br>
-                Proper care ensures that your jewelry remains beautiful and retains its luster over time. We recommend cleaning your pieces regularly using a mild soap and water solution and a soft brush. Avoid exposing your jewelry to harsh chemicals, extreme temperatures, and abrasive surfaces. When not wearing your jewelry, store it in a soft pouch or a jewelry box to prevent scratches and damage. Following these simple care tips will help preserve the beauty and longevity of your cherished pieces.<br><br>
-                
-                What is your return and exchange policy?<br>
-                We want you to be completely satisfied with your purchase. If for any reason you are not happy with your jewelry, you may return it within 30 days for a full refund or exchange, provided that the item is in its original condition and accompanied by proof of purchase. Custom-made and engraved items may be subject to specific return conditions, which our customer service team will be happy to assist you with. Our goal is to ensure that you have a positive experience with our jewelry, from purchase to wear and beyond.<br><br>
-            </p>
-        </div>
-        </div>
-        </div>
+        <script>
+            function toggleNav() {
+                var navDiv = document.getElementById("nav-div");
+                if (navDiv.style.display === "flex") {
+                    navDiv.style.display = "none";
+                } else {
+                    navDiv.style.display = "flex";
+                }
+            }
+        </script>
     </div>
-    
-    <div id="footer-div">
-        <div class= "footer-img">
-            <img width="110" height="110" src="koricosmos.png">
-            <div class="footer-img">  
-            <p>Richielle Ann A. Gutierrez - richi.elleanng@gmail.com</p>
-        </div>
-        </div>
-            
-    </div>
-</div>
 </body>
 </html>
