@@ -1,73 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Koricosmos</title>
-        <link rel = "stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koricosmos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+</head>
 <body>
     <div id="wrapper-div">
         <div id="logo-nav-div">
             <div id="logo-div">
-                <img width="105" height="105" src="koricosmos.png">
+                <img src="koricosmos.png" alt="Koricosmos Logo">
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
             <div id="nav-div">
-                <a style="color:aliceblue; text-decoration:none" href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Home</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="about.html">&nbsp;&nbsp;&nbsp;About Us</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="#">&nbsp;&nbsp;&nbsp;New Releases</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="#">&nbsp;&nbsp;&nbsp;Shop Now</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="help.html">&nbsp;&nbsp;&nbsp;Help</b></a>
+                <a href="index.html"><b>Home</b></a>
+                <a href="about.html"><b>About Us</b></a>
+                <a href="newreleases.html">New Releases</a>
+                <a href="shop.html">Shop Now</a>
+                <a href="help.html"><b>Help</b></a>
             </div>
         </div>  
-    <div id="main-div">
-        <div id="sidebar-div">
-            <a style="color: black; text-decoration:none" href="#"><b>Home</a><br>
-            <a style="color: black; text-decoration:none" href="#">Create A Custom Cosmo</a><br>
-            <a style="color: black; text-decoration:none" href="contact.html">Contact Us</b></a><br>
-        </div>
-        <div id="bodyarea-div">
-            <div class="img1-div">
-                <div class="box-div">
-                <img width="300" height="300" src="https://blingvine.com/cdn/shop/products/feroza-pendant-set-necklace-sets-blingvine-567274_750x.jpg?v=1636525258">
+        <div id="main-div">
+            <div id="sidebar-div">
+                <a href="index.html"><b>Home</b></a>
+                <a href="create.html">Create A Custom Cosmo</a>
+                <a href="contact.html">Contact Us</a>
             </div>
-        </div>
-            <div class="img2-div">
-                <div class="box-div">
-                <img width="600" height="300" src="https://res.cloudinary.com/blingvine1/image/fetch/w_1200,h_628,c_pad,b_auto/http://blingvine.com/cdn/shop/articles/25-nature-inspired-jewellery-designs-for-spring-2021-215773_84ec3628-a16c-40c2-8010-6d34d48b17a0.jpg?v=1636561610">
+            <div id="bodyarea-div">
+                <div id="welcome-div">
+                    <h1>Welcome to Koricosmos!</h1>
+                    <p>Discover the finest collection of exquisite jewelry and accessories. Explore our new releases, create your custom cosmo, or find the perfect piece for any occasion.</p>
+                </div>
+                <div class="slider">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
+
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="https://blingvine.com/cdn/shop/products/feroza-pendant-set-necklace-sets-blingvine-567274_750x.jpg?v=1636525258" alt="Elegant Feroza Pendant Set">
+                            <div class="description">Elegant Feroza Pendant Set</div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://res.cloudinary.com/blingvine1/image/fetch/w_1200,h_628,c_pad,b_auto/http://blingvine.com/cdn/shop/articles/25-nature-inspired-jewellery-designs-for-spring-2021-215773_84ec3628-a16c-40c2-8010-6d34d48b17a0.jpg?v=1636561610" alt="Nature Inspired Jewellery Designs">
+                            <div class="description">Nature Inspired Jewellery Designs</div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://image.dhgate.com/webp/m/0x0/f3/albu/km/j/13/7a3dfec2-a8c3-46f9-8d02-0cbf778eb3a0.jpg" alt="Stylish Jewelry Collection">
+                            <div class="description">Stylish Jewelry Collection</div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://us.123rf.com/450wm/geckophotos/geckophotos1805/geckophotos180500018/100525862-close-up-of-womens-platinum-necklace-and-earrings-with-a-diamond-and-blue-precious-sapphire-stone.jpg?ver=6" alt="Platinum Necklace and Earrings">
+                            <div class="description">Platinum Necklace and Earrings</div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://img.lazcdn.com/g/p/954a7b84ce37dd1d1f85f3628dff5c49.jpg_720x720q80.jpg" alt="Beautiful Sapphire Jewelry">
+                            <div class="description">Beautiful Sapphire Jewelry</div>
+                        </div>
+                    </div>
+
+                    <div class="arrow left" onclick="document.getElementById('slide' + (currentSlide > 1 ? currentSlide - 1 : 5)).checked = true;">
+                        &lt;
+                    </div>
+                    <div class="arrow right" onclick="document.getElementById('slide' + (currentSlide < 5 ? currentSlide + 1 : 1)).checked = true;">
+                        &gt;
+                    </div>
+                </div>
             </div>
-        </div>
-            <div class="img3-div">
-                <div class="box-div">
-                <img width="300" height="300" src="https://image.dhgate.com/webp/m/0x0/f3/albu/km/j/13/7a3dfec2-a8c3-46f9-8d02-0cbf778eb3a0.jpg">
-            </div>
-        </div>
-            <div class="img4-div">
-                <div class="box-div">
-                <img width="300" height="300" src="https://us.123rf.com/450wm/geckophotos/geckophotos1805/geckophotos180500018/100525862-close-up-of-womens-platinum-necklace-and-earrings-with-a-diamond-and-blue-precious-sapphire-stone.jpg?ver=6">
-            </div>
-        </div>
-            <div class="img5-div">
-                <div class="box-div">
-                <img width="300" height="300" src="https://img.lazcdn.com/g/p/954a7b84ce37dd1d1f85f3628dff5c49.jpg_720x720q80.jpg">
-            </div>
-        </div>
-            <p><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Koricosmos is a jewelry brand that is renowned for its wonderful craftmanship and creative designs. Combining elegance and personal sense of style, Koricosmos can make any piece into a unique statement for everyone to display on themselves. Gift one to your loved ones, today and receive a piece of cosmic beauty that you can express.</p>
-        </div>
         </div>
     </div>
     
     <div id="footer-div">
-        <div class= "footer-img">
-            <img width="110" height="110" src="koricosmos.png">
-            <div class="footer-img">  
+        <div class="footer-img">
+            <img width="110" height="110" src="koricosmos.png" alt="Koricosmos Logo">
             <p>Richielle Ann A. Gutierrez - richi.elleanng@gmail.com</p>
         </div>
-        </div>
-            
     </div>
-</div>
+
+    <script>
+        let currentSlide = 1;
+
+        document.querySelector('.arrow.left').onclick = function() {
+            document.getElementById('slide' + (currentSlide > 1 ? currentSlide - 1 : 5)).checked = true;
+            currentSlide = currentSlide > 1 ? currentSlide - 1 : 5;
+        };
+
+        document.querySelector('.arrow.right').onclick = function() {
+            document.getElementById('slide' + (currentSlide < 5 ? currentSlide + 1 : 1)).checked = true;
+            currentSlide = currentSlide < 5 ? currentSlide + 1 : 1;
+        };
+
+        function toggleNav() {
+            var navDiv = document.getElementById("nav-div");
+            if (navDiv.style.display === "flex") {
+                navDiv.style.display = "none";
+            } else {
+                navDiv.style.display = "flex";
+            }
+        }
+    </script>
 </body>
 </html>
