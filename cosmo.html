@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koricosmos - Create A Custom Cosmo</title>
+    <link href="https://fonts.googleapis.com/css?family=Aboreto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="cosmostyle.css">
+</head>
+<body>
+    <div id="wrapper-div">
+        <div id="logo-nav-div">
+            <div id="logo-div">
+                <img src="koricosmos.png" alt="Koricosmos Logo">
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="nav-div">
+                <a href="index.html"><b>Home</b></a>
+                <a href="about.html"><b>About Us</b></a>
+                <a href="new.html">New Releases</a>
+                <a href="shop.html">Shop Now</a>
+                <a href="help.html"><b>Help</b></a>
+            </div>
+        </div>  
+        <div id="main-div">
+            <div id="sidebar-div">
+                <a href="index.html"><b>Home</b></a>
+                <a href="cosmo.html">Create A Custom Cosmo</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div id="bodyarea-div">
+                <form id="order-form" action="https://formsubmit.co/richielleann94@gmail.com" method="POST" onsubmit="return handleSubmit(event)">
+                    <h2>Order Form</h2>
+                    <div class="form-section">
+                        <div class="form-labels">
+                            <p class="cosmo-label-left">Choose Your Cosmo</p>
+                            <p class="cosmo-label-right">Type of Cosmo</p>
+                        </div>
+                        <div class="inputBox">
+                            <div class="checkboxGroup">
+                                <div class="checkbox-label">
+                                    <input type="checkbox" name="selectjewelry" value="ring" id="jewelry1" onclick="toggleSelect(this, 'cosmo_type_ring')">
+                                    <label for="jewelry1">Ring</label>
+                                </div>
+                                <select name="cosmo_type_ring" id="cosmo_type_ring" disabled>
+                                    <option value="none" selected>None</option>
+                                    <option value="bronze">Bronze</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="gold">Gold</option>
+                                </select>
+                            </div>
+                            <div class="checkboxGroup">
+                                <div class="checkbox-label">
+                                    <input type="checkbox" name="selectjewelry" value="necklace" id="jewelry2" onclick="toggleSelect(this, 'cosmo_type_necklace')">
+                                    <label for="jewelry2">Necklace</label>
+                                </div>
+                                <select name="cosmo_type_necklace" id="cosmo_type_necklace" disabled>
+                                    <option value="none" selected>None</option>
+                                    <option value="bronze">Bronze</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="gold">Gold</option>
+                                </select>
+                            </div>
+                            <div class="checkboxGroup">
+                                <div class="checkbox-label">
+                                    <input type="checkbox" name="selectjewelry" value="bracelet" id="jewelry3" onclick="toggleSelect(this, 'cosmo_type_bracelet')">
+                                    <label for="jewelry3">Bracelet</label>
+                                </div>
+                                <select name="cosmo_type_bracelet" id="cosmo_type_bracelet" disabled>
+                                    <option value="none" selected>None</option>
+                                    <option value="bronze">Bronze</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="gold">Gold</option>
+                                </select>
+                            </div>
+                            <div class="checkboxGroup">
+                                <div class="checkbox-label">
+                                    <input type="checkbox" name="selectjewelry" value="earrings" id="jewelry4" onclick="toggleSelect(this, 'cosmo_type_earrings')">
+                                    <label for="jewelry4">Earrings</label>
+                                </div>
+                                <select name="cosmo_type_earrings" id="cosmo_type_earrings" disabled>
+                                    <option value="none" selected>None</option>
+                                    <option value="bronze">Bronze</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="gold">Gold</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="name" required>
+                        <label>Name</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="address" required>
+                        <label>Enter &nbsp; Address</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="contact_num" required>
+                        <label>Contact &nbsp; Number</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" id="submit-btn" value="Submit">
+                    </div>
+                </form>               
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <img src="checkmark.png" alt="Checkmark" class="modal-checkmark">
+                            <p>Stellar! You've created a cosmo. After verifying, you can continue to personalize your cosmo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-div" class="clearfix">
+            <div class="footer-img">
+                <img width="110" height="110" src="koricosmos.png" alt="Koricosmos Logo">
+                <div class="footer-img">  
+                    <p>Richielle Ann A. Gutierrez - richi.elleanng@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cosmoscript.js"></script>
+</body>
+</html>

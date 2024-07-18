@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koricosmos - Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Aboreto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="now.css">
+</head>
+<body>
+    <div id="wrapper-div">
+        <div id="logo-nav-div">
+            <div id="logo-div">
+                <img src="koricosmos.png" alt="Koricosmos Logo">
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="nav-div">
+                <a href="index.html"><b>Home</b></a>
+                <a href="about.html"><b>About Us</b></a>
+                <a href="new.html">New Releases</a>
+                <a href="shop.html">Shop Now</a>
+                <a href="help.html"><b>Help</b></a>
+            </div>
+        </div>  
+        <div id="main-div">
+            <div id="sidebar-div">
+                <a href="index.html"><b>Home</b></a>
+                <a href="cosmo.html">Create A Custom Cosmo</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            
+            <div id="bodyarea-div">
+                <form id="order-form" action="https://formsubmit.co/richielleann94@gmail.com" method="POST">
+                    <h2>Order Form</h2>
+                    
+                    <div class="checkbox-container">
+                        <div class="checkbox-column">
+                            <div class="checkboxGroup">
+                                <input type="checkbox" name="selectjewelry" value="ring" id="jewelry1">
+                                <label for="jewelry1">Jewelry 1</label>
+                            </div>
+                            <div class="checkboxGroup">
+                                <input type="checkbox" name="selectjewelry" value="necklace" id="jewelry2">
+                                <label for="jewelry2">Jewelry 2</label>
+                            </div>
+                            <div class="checkboxGroup">
+                                <input type="checkbox" name="selectjewelry" value="bracelet" id="jewelry3">
+                                <label for="jewelry3">Jewelry 3</label>
+                            </div>
+                            <div class="checkboxGroup">
+                                <input type="checkbox" name="selectjewelry" value="earrings" id="jewelry4">
+                                <label for="jewelry4">Jewelry 4</label>
+                            </div>
+                            <div class="checkboxGroup">
+                                <input type="checkbox" name="selectjewelry" value="jewelry5" id="jewelry5">
+                                <label for="jewelry5">Jewelry 5</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="name" required>
+                        <label>Name</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="address" required>
+                        <label>Enter &nbsp; Address</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="contact_num" required>
+                        <label>Contact &nbsp; Number</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Submit" onclick="return handleSubmit(event);">
+                    </div>
+                </form>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <img src="checkmark.png" alt="Checkmark" class="modal-checkmark">
+                            <p>Order sent! You are one step away from getting a cosmo! Please wait for the next step after verifying your order.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-div" class="clearfix">
+            <div class="footer-img">
+                <img width="110" height="110" src="koricosmos.png" alt="Koricosmos Logo">
+                <div class="footer-img">  
+                    <p>Richielle Ann A. Gutierrez - richi.elleanng@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="order.js"></script>
+</body>
+</html>
