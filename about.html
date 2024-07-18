@@ -1,169 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Koricosmos - About Us</title>
-        <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koricosmos - About Us</title>
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <style>
-*{
-    box-sizing: border-box;
-}
- 
-#logo-nav-div{
-    width: 100%;
-    min-height: 110px;
-    background-color: rgb(0,38,74);
-}
- 
-#logo-div{
-    width: 50%;
-    float: left;
-    padding-left: 2%;
-}
- 
-#nav-div{
-    width: 50%;
-    float: right;
-    line-height: 100px;
-    font-family: Aboreto;
-    font-size: 16px;
-}
- 
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
- 
-#main-div{
-    width: 100%;
-    min-height: 100px;
-}
- 
-#sidebar-div{
-    width:15%;
-    min-height:350px;
-    background-color: rgb(255,220,220);
-    float:left;
-    text-align:center;
-    line-height:124px;
-    font-family: Aboreto;
-    font-size: 14px;
-}
- 
-#bodyarea-div{
-    width: 85%;
-    float: right;
-    display: flex;
-    flex-wrap: wrap;
-    background-color:blanchedalmond;
-    align-content: stretch;
-    font-family: Comfortaa;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-.img1-div{
-    position: relative;
-    top:0px;
-    left:90px;
-}
+        body {
+            font-family: Comfortaa, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
 
-.img2-div{
-    position: relative;
-    top:0px;
-    left:200px;
-}
+        #logo-nav-div {
+            width: 100%;
+            min-height: 110px;
+            background-color: rgb(0, 38, 74);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2%;
+        }
 
-.img3-div{
-    position: relative;
-    top:15px;
-    left:90px;
-}
+        #logo-div img {
+            width: 105px;
+            height: 105px;
+        }
 
-.img4-div{
-    position: relative;
-    top:15px;
-    left:200px;
-}
+        #nav-div {
+            display: flex;
+            align-items: center;
+            font-family: Aboreto, serif;
+            font-size: 16px;
+        }
 
-.img5-div{
-    position: relative;
-    top:15px;
-    left:203px;
-}
+        #nav-div a {
+            color: aliceblue;
+            text-decoration: none;
+            margin: 0 15px;
+        }
 
-.box-div{
-    width: 60%;
-    min-height: 300px;
-}
+        #nav-div a:hover {
+            text-decoration: underline;
+        }
 
-#footer-div{
-    width: 100%;
-    background-color: rgb(0,38,74);
-    color: white;
-    text-align: center;
-    padding: 30px;
-    display: flex;
-    line-height: 30px;
-    font-family: Comfortaa;
-    font-size: 18px;
-}
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
 
-.footer-img{
-    flex: 1;
-    text-align: center;
-}
+        #main-div {
+            display: flex;
+        }
+
+        #sidebar-div {
+            width: 15%;
+            background-color: rgb(255, 220, 220);
+            padding: 20px;
+            border-right: 2px solid rgb(0, 38, 74); 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+        }
+
+        #sidebar-div a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0; 
+            margin-bottom: 15px; 
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 20px; 
+            text-align: center; 
+        }
+
+        #sidebar-div a:hover {
+            background-color: rgb(0, 38, 74);
+            color: white;
+        }
+
+        #bodyarea-div {
+            flex: 1;
+            background: url('stardust.png') no-repeat center center;
+            background-size: cover;
+            padding: 40px;
+            font-family: Comfortaa, sans-serif;
+        }
+
+        #about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        #about-content h1 {
+            font-family: Aboreto, serif;
+            font-size: 36px;
+            color: rgb(0, 38, 74);
+            margin-bottom: 20px;
+        }
+
+        #about-content p {
+            font-size: 18px;
+            color: rgb(0, 38, 74);
+            margin-bottom: 20px;
+        }
+
+        #about-content img {
+            width: 300px; 
+            height: 300px; 
+            object-fit: cover; 
+            margin: 20px 0;  
+            border-radius: 10px; 
+        }
+
+        #footer-div {
+            width: 100%;
+            background-color: rgb(0, 38, 74);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Comfortaa, sans-serif;
+            font-size: 18px;
+        }
+
+        .footer-img img {
+            width: 110px;
+            height: 110px;
+        }
+
+        .footer-img p {
+            margin-top: 10px;
+        }
+
+        
+        @media (max-width: 768px) {
+            #logo-nav-div {
+                flex-direction: column;
+                padding: 10px 2%;
+            }
+
+            #nav-div {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+
+            #nav-div a {
+                margin: 10px 0;
+            }
+
+            .hamburger {
+                display: block;
+                cursor: pointer;
+                margin-left: auto;
+            }
+
+            .hamburger div {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                margin: 5px 0;
+            }
+
+            #sidebar-div {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                border-right: none;
+                border-bottom: 2px solid rgb(0, 38, 74); 
+            }
+
+            #main-div {
+                flex-direction: column;
+            }
+
+            #bodyarea-div {
+                width: 100%;
+                padding: 20px;
+            }
+
+            #about-content h1 {
+                font-size: 28px;
+            }
+
+            #about-content p {
+                font-size: 16px;
+            }
+
+            #about-content img {
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
+</head>
 <body>
     <div id="wrapper-div">
         <div id="logo-nav-div">
             <div id="logo-div">
-                <img width="105" height="105" src="koricosmos.png">
+                <img src="koricosmos.png" alt="Koricosmos Logo">
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
             <div id="nav-div">
-                <a style="color:aliceblue; text-decoration:none" href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Home</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="about.html">&nbsp;&nbsp;&nbsp;About Us</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="#">&nbsp;&nbsp;&nbsp;New Releases</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="#">&nbsp;&nbsp;&nbsp;Shop Now</a>&nbsp;&nbsp;&nbsp;
-                <a style="color:aliceblue; text-decoration:none" href="help.html">&nbsp;&nbsp;&nbsp;Help</b></a>
+                <a href="index.html"><b>Home</b></a>
+                <a href="about.html"><b>About Us</b></a>
+                <a href="new.html">New Releases</a>
+                <a href="shop.html">Shop Now</a>
+                <a href="help.html"><b>Help</b></a>
             </div>
         </div>  
-    <div id="main-div">
-        <div id="sidebar-div">
-            <a style="color: black; text-decoration:none" href="index.html"><b>Home</a><br>
-            <a style="color: black; text-decoration:none" href="#">Create A Custom Cosmo</a><br>
-            <a style="color: black; text-decoration:none" href="contact.html">Contact Us</b></a><br>
+        <div id="main-div">
+            <div id="sidebar-div">
+                <a href="index.html"><b>Home</b></a>
+                <a href="cosmo.html">Create A Custom Cosmo</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div id="bodyarea-div">
+                <div id="about-content">
+                    <h1>About Koricosmos</h1>
+                    <img src="koricosmos.png" alt="Koricosmos Logo">
+                    <p>
+                        Founded in 2024, Koricosmos blends the enchanting beauty of the cosmos with artisan craftsmanship to create jewelry that transcends time and trends. Our journey began with a deep fascination for the celestial wonders that adorn our universe, inspiring us to translate their awe-inspiring allure into wearable art.
+                    </p>
+                    <p>
+                        At Koricosmos, each piece of jewelry is a testament to our dedication to excellence. Combining traditional jewelry-making techniques with innovative designs, we meticulously craft each item to reflect the shimmering elegance of stars, galaxies, and celestial bodies. Our collection features ethically sourced gemstones and precious metals that mirror the brilliance of distant galaxies and the mystique of cosmic phenomena.
+                    </p>
+                    <p>
+                        Whether you're captivated by the twinkling allure of a constellation-inspired necklace, the cosmic elegance of a galaxy-themed bracelet, or the celestial charm of star-studded earrings, every Koricosmos piece is a testament to our passion for quality and creativity. Each design embodies a sense of wonder and exploration, inviting you to embark on a journey through the cosmos with every wear.
+                    </p>
+                    <p>
+                        Rooted in a belief in the intrinsic beauty of the universe and the transformative power of inspired design, Koricosmos invites you to discover jewelry that resonates with the cosmic wonder within you. Embrace the celestial allure and stellar style of Koricosmos jewelry, where every piece is a testament to the harmonious blend of craftsmanship and cosmic inspiration.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div id="bodyarea-div">
-        </div>
-        <div id="bodyarea-div">
-            <p>
-                About Koricosmos<br><br>
-
-                Founded in 2024, Koricosmos blends the enchanting beauty of the cosmos with artisan craftsmanship to create jewelry that transcends time and trends. Our journey began with a deep fascination for the celestial wonders that adorn our universe, inspiring us to translate their awe-inspiring allure into wearable art.<br><br>
-
-                At Koricosmos, each piece of jewelry is a testament to our dedication to excellence. Combining traditional jewelry-making techniques with innovative designs, we meticulously craft each item to reflect the shimmering elegance of stars, galaxies, and celestial bodies. Our collection features ethically sourced gemstones and precious metals that mirror the brilliance of distant galaxies and the mystique of cosmic phenomena.<br><br>
-
-                Whether you're captivated by the twinkling allure of a constellation-inspired necklace, the cosmic elegance of a galaxy-themed bracelet, or the celestial charm of star-studded earrings, every Koricosmos piece is a testament to our passion for quality and creativity. Each design embodies a sense of wonder and exploration, inviting you to embark on a journey through the cosmos with every wear.<br><br>
-
-                Rooted in a belief in the intrinsic beauty of the universe and the transformative power of inspired design, Koricosmos invites you to discover jewelry that resonates with the cosmic wonder within you. Embrace the celestial allure and stellar style of Koricosmos jewelry, where every piece is a testament to the harmonious blend of craftsmanship and cosmic inspiration.<br><br>
-            </p>
-        </div>
-        </div>
+        <div id="footer-div">
+            <div class="footer-img">
+                <img src="koricosmos.png" alt="Koricosmos Logo">
+                <p>Richielle Ann A. Gutierrez - richi.elleanng@gmail.com</p>
+            </div>
         </div>
     </div>
-    
-    <div id="footer-div">
-        <div class= "footer-img">
-            <img width="110" height="110" src="koricosmos.png">
-            <div class="footer-img">  
-            <p>Richielle Ann A. Gutierrez - richi.elleanng@gmail.com</p>
-        </div>
-        </div>
-            
-    </div>
-</div>
+
+    <script>
+        function toggleNav() {
+            var navDiv = document.getElementById("nav-div");
+            if (navDiv.style.display === "flex") {
+                navDiv.style.display = "none";
+            } else {
+                navDiv.style.display = "flex";
+            }
+        }
+    </script>
 </body>
 </html>
